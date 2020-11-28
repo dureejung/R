@@ -52,3 +52,5 @@ make_sum <- function(x,y){
 
 make_sum(3,4) --결과값 7
 
+
+
