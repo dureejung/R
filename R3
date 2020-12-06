@@ -9,7 +9,7 @@ ifelse(sum(x-y)>0,"positive",
 die <- 1:6
 rolls <- expand.grid(die, die)
 
-# 모든 주사위의 합은?
+# 모든 주사위의 합은? 
 rolls$value <- rolls$Var1 + rolls$Var2
 head(rolls)
 rolls$value
