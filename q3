@@ -1,0 +1,27 @@
+
+1. data1 %>%
+  group_by(continent) %>%
+  dplyr::summarise(mean = mean(lifeExp)) %>%
+  ggplot(aes(x=continent,y=mean,fill=continent)) 
+  + geom_bar(stat="identity")
+  
+ 2. data1 %>%
+  group_by(continent) %>%
+  dplyr::summarise(mean = mean(lifeExp)) %>%
+  ggplot() +
+  aes(x = continent) +
+  aes(y = mean) +
+  geom_bar(stat = "identity") +
+  aes(fill = continent)
+  
+  1 실행 안되는 이유?
+  +의 위치때문!!!!
+  
+  
+  data1 %>%
+  group_by(continent) %>%
+  dplyr::summarise(mean = mean(lifeExp)) %>%
+  ggplot(aes(x=continent,y=mean,fill=continent)) + 
+  geom_bar(stat="identity")
+  
+  
