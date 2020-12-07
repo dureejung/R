@@ -1,0 +1,16 @@
+1. gapminder %>% 
+  group_by(continent) %>%
+  dplyr::summarise(mean = mean(lifeExp)) %>%
+  ggplot(aes(x=continent, y= mean, fill= continent)) + geom_boxplot()
+
+
+2. data1 %>%
+  group_by(continent) %>%
+  dplyr::summarise(mean = mean(lifeExp)) %>%
+  ggplot(aes(x=continent,y=mean,fill=continent)) + 
+  geom_bar(stat="identity")
+  
+  
+  둘 다 summarise인데 1은 실행안되는 이유?
+  boxplot은 데이터를 요약해주는 그래프이므로 이미 요약된 데이터를 이용할 수 없음
+  막대그래프는 관계없음
