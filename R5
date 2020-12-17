@@ -8,7 +8,7 @@ top_n(데이터,몇번째까지,열/행이름)
 summarise(함수)
 group_by(열이름)
 
-*tidyr  
+*tidyr   
 spread(데이터이름, 기준변수이름, 나열할 값)
 replace_na(list(변수1=값, 변수2=값, ...))
 drop_na(결측값을 찾을 변수1, 변수2, ...) 
