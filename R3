@@ -1,4 +1,4 @@
--else if ≠ifelse
+-else if ≠ifelse 
 
 -ifelese에 여러 개의 조건 넣고 싶을 때
 ifelse(sum(x-y)>0,"positive",
