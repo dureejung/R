@@ -1,0 +1,11 @@
+한글 포함된 csv파일 read 오류 발생 시
+
+>xxxx<-read.csv("xxx.csv")
+Error in make. names(col.names, unique = TRUE ) :
+   유효하지 않은 멀티바이트 문자열 1입니다
+
+★fileEncoding = "UCS-2LE"를 추가★
+
+
+
+read.csv("000.csv",fileEncoding="UCS-2LE")
