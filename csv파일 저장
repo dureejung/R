@@ -1,0 +1,5 @@
+write.csv(a,file="a.csv",row.names=FALSE)
+
+a=데이터 이름
+file=""은 컴퓨터에 저장할 파일명
+row.names=FALSE의 의미는 R스크립트 실행 시 자동으로 생성되는 행 번호를 제외하고 저장하기 위함
