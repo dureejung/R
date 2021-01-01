@@ -1,0 +1,3 @@
+covid$확진일<-ymd(covid$확진일)
+
+as.Date 사용하면 오류 남ㅠㅠ(왜지?)
