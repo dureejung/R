@@ -1,4 +1,4 @@
-
+  
 1. data1 %>%
   group_by(continent) %>%
   dplyr::summarise(mean = mean(lifeExp)) %>%
